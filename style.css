@@ -1,0 +1,439 @@
+* {
+  padding:auto;
+  margin:auto;
+  font-size: 25px;
+  box-sizing: border-box;
+  color: #1daee8;
+}
+
+body {
+  padding: auto;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  background-image:url('https://i.pinimg.com/originals/aa/9b/b7/aa9bb7ffc6d502e9112ec8c7e9350175.png');
+  font-weight: 2600;
+   background-size: cover;
+  background-position: center;
+  color: #90e81d;
+}
+/* Light theme styles */
+body.light-theme {
+  background-image: url('https://pressstart.vip/images/uploads/assets/bluemoon.png');
+  color: #888da0;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-image: url('https://www.spriteland.com/sprites/downloads/night-background_PNG.png');
+  color: #2d3650a1;
+}
+
+/* Blue theme styles */
+body.blue-theme {
+  background-image: url('https://2.bp.blogspot.com/-XMBE0Wd5gpM/UfQAb_gMF1I/AAAAAAAAObE/sBEbkD4HNqk/s1600/sprite_effects_stages_0002.png');
+  color: #b37a7a8f;
+}
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 30px;
+  margin-right: 20px; /* Adjust margin as needed */
+  color: #d82626; /* Set text color to contrast with the background */
+}
+
+.logo {
+  max-height: 50px; /* Adjust max height as needed */
+}
+
+  
+  .ssa {padding:22;
+    margin:22;
+    font-size: 25px;}
+  
+  .overlay {padding: auto;
+    margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+/* Light theme styles */
+body.light-theme {
+  background-color: #2c2681be;
+  color: #888da0;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #282c34;
+  color: #2d3650a1;
+}
+
+/* Blue theme styles */
+body.blue-theme {
+  background-color: #0b28aac4;
+  color: #b37a7a8f;
+}
+
+  
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.main-section {
+  /* padding: 20px; */
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+
+.custom-image__container {
+  height: 100%;
+  overflow: scroll;
+  padding: 10px 0;
+  
+}
+
+.custom-image__wrapper {
+  /* display: flex; */
+  /* flex-direction: column; */
+  min-width: 100px;
+  min-height: 100px;
+  display: block;
+  position: relative;
+  /* margin-bottom: 20px; */
+  margin: 20px 0;
+}
+
+.custom-image__wrapper span{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin: auto;
+  vertical-align: middle;
+  text-align: center;
+  background: #4e45401f;
+  position: absolute; 
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  animation: expand .3s;
+  transition: all ease 0.2s;
+  
+}
+
+
+
+.custom-image__wrapper span::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: #000000;
+}
+.custom-image__wrapper span::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 20px;
+  background-color: #000000;
+}
+
+.custom-image__wrapper span:hover {
+  border-color: #d19930;
+  background: #4e45400d;
+}
+
+
+.custom-image__wrapper input{
+  display: none;  
+}
+
+.custom-image__wrapper img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+
+  /* background: ; */
+}
+.image-button {
+
+}
+
+.btn {
+  font-family: 'Nerko One', cursive;
+  margin: 20px 10px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 55px;
+  transform: scale(1.09);
+}
+.btn-custom:hover {
+  transform: scale(1.05);
+}
+
+.game-board {
+  /* height: 700px; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+
+.flip-card {
+
+  position: relative;
+  width: calc(100% / 3 - 20px);
+  margin: 10px;
+  background: transparent;
+}
+
+.flip-card::before {
+  content: "";
+  float: left;
+  padding-top: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(15, 15, 15, 0.2); 
+  animation: expand .2s;
+  border-style: outset;
+  border-width: 5px;
+  border-radius: 10%;
+}
+
+.flip-card-inner:hover {
+  box-shadow: 0 0 60px #2187b6;
+  cursor: pointer;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10%;
+}
+
+.flip-card-front {
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position:  center;
+}
+
+.flip-card-inner.animate {
+  transform: rotateY(180deg);
+}
+
+.flip-card-back {
+  background:linear-gradient(135deg, #4582eb 0%,#67acec 100%);
+  box-shadow: inset 0 0 0 200px rgba(65, 90, 230, 0.3);
+}
+
+@keyframes expand {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.matched, .matched:hover {
+  opacity: 0.4;
+  box-shadow: none;
+  cursor: wait;
+}
+
+
+/* Modal */
+/* The Modal (background) */
+#warningModal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(80, 79, 79);
+  /* Fallback color */
+  background-color: rgba(65, 65, 65, 0.4);
+  /* Black w/ opacity */
+}
+
+#imageModal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(62, 71, 85);
+  /* Fallback color */
+  background-color: rgba(79, 91, 104, 0.4);
+  /* Black w/ opacity */
+}
+.selection-menu{color: #a12f2ff6;
+background-color: #1daee8;}
+#generateButton{ background-color: greenyellow;
+  margin: center;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #4f506e;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #1f4d83;
+  width: 80%;
+}
+
+#warningModal .modal-content {}
+
+#imageModal .modal-content {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* font-size: 120px; */
+}
+
+#imageModal .modal-content h1{
+  font-size: 25px;
+}
+
+
+#imageModal .far {}
+
+/* The Close Button */
+.close {
+  color: #3f67d4;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+
+@media (min-width: 576px){
+  .container {
+    max-width: 540px;
+    
+
+  }
+}
+
+@media (min-width: 768px){
+  .container {
+    max-width: 720px;
+    
+
+  }
+}
+
+
+@media (min-width: 992px){
+  .title {
+    font-size: 45px;
+  }
+
+  .flip-card {
+    width: calc(100% / 4 - 40px);
+    margin: 20px;
+  }
+}
+
+/* Light theme styles */
+.body.light-theme {
+  background-color: #a0dfeb5b;
+  color: #ad4141;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #282c34;
+  color: #ffffffa1;
+}
+
+/* Custom theme styles */
+body.custom-theme {
+  background-color: #1573b6; /* Change this to your desired custom color */
+  color: #2f4b7c;
+}
+
+
+.timer {
+  font-size: 33px;
+  margin-top: 29px;
+}
+.click-count {
+  font-size: 18px;
+  margin-top: 10px;
+  
+  color: #971f1f54; /* Adjust color as needed */
+}
+#dds{background-color: #1f4d83 ;}
